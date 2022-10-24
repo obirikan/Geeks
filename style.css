@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 1px 1px rgb(219, 219, 219);
+}
+.child-2{
+    display: flex;
+    align-items: center;
+}
+.child-1{
+    display: flex;
+    align-items: center;
+}
+.image{
+    width: 60px;
+}
+.text{
+    font-size: 40px;
+    font-family: 'Londrina Sketch', cursive;
+    font-weight: 900;
+}
+.content{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(14,14,84);
+    background: linear-gradient(90deg, rgba(14,14,84,1) 1%, rgba(19,52,134,1) 100%, rgba(0,212,255,1) 100%);
+}
+.ctext{
+    font-size: 70px;
+    color: white;
+}
+.ctxt{
+    font-size: 70px;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Londrina Sketch', cursive;
+    font-weight: 900;
+
+}
+.ctxt::before {
+    content:'UI DESIGNERS';
+    animation: text 4s ease-in-out infinite;
+    transition: all 1s;
+  }
+
+  @keyframes text {
+    0%   {content:'UI DESIGNERS'; }
+    20%  {content:'UX DESIGNERS'; }
+    25%  {content:'DEVELOPERS'; }
+    75%  {content:'DEVOPS'; }
+    100% {content:'ALL IN ONE';}
+  }
+  .lottie{
+    width: 500px;
+  }
+  .next-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .xt{
+    font-size: 60px;
+    margin: 100px;
+  }
+  .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .head-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    background: rgb(14,14,84);
+    padding: 5px;
+    background: linear-gradient(90deg, rgba(14,14,84,1) 1%, rgba(19,52,134,1) 100%, rgba(0,212,255,1) 100%);
+  }
+  .ftxt{
+    color: white;
+  }
+
+
+  @media only screen  and (max-width: 600px) {
+    .ctxt{
+        font-size: 20px;
+    }
+    .next-content{
+        display: grid;
+        grid-template-columns: 2fr;
+        margin: 20px;
+      }
+      .xt{
+        font-size: 40px;
+        margin: 0px;
+      }
+      .ctext{
+        font-size: 20px;
+    }
+      .lottie{
+        width: 300px;
+      }
+      .content{
+        height: 30vh;
+       
+    }
+    .image{
+        width: 40px;
+    }
+    .text{
+        font-size: 30px;
+        font-family: 'Bangers', cursive;
+    }
+    footer{
+        padding: 10px;
+    }
+
+  }
